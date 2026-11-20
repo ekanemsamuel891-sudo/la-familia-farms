@@ -1,0 +1,306 @@
+
+/* =========================
+   ZESAM FARMS WEBSITE
+   MAIN DESIGN
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faf7;
+  color: #26332a;
+  line-height: 1.7;
+}
+
+/* HEADER */
+
+.header {
+  background: #123d26;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+.logo {
+  color: #e7c56c;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e7c56c;
+}
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 520px;
+  background:
+    linear-gradient(
+      rgba(8, 40, 22, 0.72),
+      rgba(8, 40, 22, 0.72)
+    ),
+    url("images/farm1.jpg");
+
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.tagline {
+  color: #e7c56c;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.btn,
+.order-btn {
+  display: inline-block;
+  background: #218447;
+  color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.order-btn:hover {
+  background: #145d30;
+  transform: translateY(-2px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+  padding: 75px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #174d2d;
+  margin-bottom: 20px;
+}
+
+.section > p {
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+/* PRODUCTS */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.product-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: #174d2d;
+  margin: 15px 0 5px;
+}
+
+.price {
+  color: #218447;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+/* GALLERY */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* REVIEWS */
+
+#reviews-container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* CONTACT AND PAYMENT */
+
+#contact,
+#payment {
+  background: #edf4ed;
+}
+
+/* FOOTER */
+
+footer {
+  background: #123d26;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer h3 {
+  color: #e7c56c;
+  margin-bottom: 10px;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 12px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 50px 18px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container img {
+    height: 220px;
+  }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
